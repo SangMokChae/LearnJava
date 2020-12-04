@@ -1,0 +1,22 @@
+package example;
+
+public class Triangle extends Shape{
+	
+	public Triangle(int width, int height) {
+		super(width, height);
+	}
+	
+	@Override
+	public double getArea() {
+		return ((width * height) / 2);
+	}
+	
+	public void showArea() {
+		System.out.println("≥–¿Ã : " +getArea());
+	}
+	
+	public void showInfo() {
+		System.out.println("ªÔ∞¢«¸¿« πÿ∫Ø : " +width);
+		System.out.println("ªÔ∞¢«¸¿« ≥Ù¿Ã : " +height);
+	}
+}
