@@ -1,17 +1,16 @@
 package chapter10_Q1;
 import java.io.IOException;
 
-//https://m.blog.naver.com/hann726/221655068786 주소 참조
 
 public class SortTest2 {
 	public static void main(String[] args) throws IOException {
+		while(true) {
 		System.out.println("정렬 방식을 선택하세요.");
 		System.out.println("B : BubbleSort ");
 		System.out.println("H : HeapSort");
 		System.out.println("Q : QuickSort");
-//		반복문 만들어 보기
-		int ch = System.in.read();
 		
+		int ch = System.in.read();
 		Sort sort = null;
 		
 		if(ch =='B' || ch == 'b') {
@@ -32,5 +31,9 @@ public class SortTest2 {
 		sort.ascending(arr);
 		sort.descending(arr);
 		sort.decription();
+		ch = System.in.read(); //enter는 2개 키에 해당한다.
+		ch = System.in.read(); //다음에는 bufferedReader를 사용해보자
+		System.out.println();
+		}
 	}
 }
