@@ -13,6 +13,11 @@ public class CalculatorTest {
 		System.out.println(calc.square(8));
 		calc.showInfo();
 		
+		calc.description();
+		
 //		Calc newCalc = calc;
+		
+		int[] arr = {1, 2, 3, 4, 5};
+		System.out.println(Calc.total(arr));
 	}
 }
