@@ -14,7 +14,7 @@ class Point {
 	}
 }
 
-class Circle implements Cloneable {
+class Circle implements Cloneable { //밑에 exception 처리를 위해 사용
 	Point point;
 	int radius;
 	
