@@ -23,15 +23,18 @@ public class MemberTest {
 		memberList.add(memberGo);
 		memberList.add(memberSoon);
 		
-		for (int i = 0; i < memberList.size(); i++) {
-			for(int j = 0; j < memberList.size(); j++) {
-				if(memberList.get(i).getMemberGrade().getBonusPoint() <
-				memberList.get(j).getMemberGrade().getBonusPoint()) { //get(i)까지가 member이다. /getMemberGrade()까지가 MemberGrade이다. /bonusPoint는 이 안에 존재한다.
-					memberList.get(i).rank++;
-				}
-			}
-		}
+//		for (int i = 0; i < memberList.size(); i++) {
+//			for(int j = 0; j < memberList.size(); j++) {
+//				if(memberList.get(i).getMemberGrade().getBonusPoint() <
+//				memberList.get(j).getMemberGrade().getBonusPoint()) { //get(i)까지가 member이다. /getMemberGrade()까지가 MemberGrade이다. /bonusPoint는 이 안에 존재한다.
+//					memberList.get(i).rank++;
+//				}
+//			}
+//		}
 //		평가에서는 메소드를 호출 해야된다.
+		
+		Rank rk = new Rank(); //Rank를 생성해준다.
+		rk.rank(memberList); //Rank의 rank 메소드의 값을 불러온다. / memberList는 참조변수이다. 주소값을 변환시켜 준다.
 		
 		for(Member info : memberList) {
 			info.showInfo();
