@@ -13,6 +13,7 @@ public class Member {
 	//Date type은 import 해줘야한다. private지정
 	private MemberGrade memberGrade;
 	//memberGrade 객체도 private를 만들어줘야한다.
+	public int rank = 1;
 
 	public Member(String memberID, String memberName, String passwd) { //Member라는 생성자를 생성해줘야 한다.
 		super();
@@ -71,5 +72,6 @@ public class Member {
 		System.out.println("가입일 : " +joinDate);
 		System.out.println(memberGrade.showGradeInfo());
 		// = System.out.println("회원등급 : " +memberGrade.getGrade());
+		System.out.println("순위: " +rank);
 	}
 }
