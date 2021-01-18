@@ -20,12 +20,12 @@ public class LiterarySubject extends Subject {
 
 	@Override
 	public void sum() {
-		System.out.println(kor + eng+ math + his);
+		sum = (kor + eng+ math + his);
 	}
 
 	@Override
 	public void average() {
-		System.out.println(Math.round(sum / 4));
+		avg = (Math.round(sum / 4));
 	}
 	
 	public String showSubjectInfo() {

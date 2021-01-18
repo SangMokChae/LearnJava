@@ -54,7 +54,7 @@ public class Subject {
 	}
 	
 	public void average() {
-		System.out.println(Math.round(sum / 3));
+		avg = (sum / 3);
 	}
 	
 	public String showSubjectInfo() {

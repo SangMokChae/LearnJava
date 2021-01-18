@@ -9,7 +9,7 @@ public class Main {
 		ArrayList<Student> list = new ArrayList<>();
 		
 		list.add(new Student(1, 90, 90, 90));
-		list.add(new Student(2, 88, 97, 90));
+		list.add(new Student(2, new Subject(88, 97, 90)));
 		list.add(new Student(3, 70, 70, 70));
 		
 		CalcRank ck = new CalcRank();

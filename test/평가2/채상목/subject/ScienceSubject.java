@@ -30,12 +30,12 @@ public class ScienceSubject extends Subject {
 
 	@Override
 	public void sum() {
-		System.out.println(kor + eng + math +phy +chemi);
+		sum = (kor + eng + math +phy +chemi);
 	}
 
 	@Override
 	public void average() {
-		System.out.println(Math.round(sum / 5));
+		avg = (Math.round(sum / 5));
 	}
 	
 	public String showSubjectInfo() {

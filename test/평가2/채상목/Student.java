@@ -7,11 +7,11 @@ public class Student{
 	Subject subject;
 	int rank = 1;
 	
-	public Student() {};
+	Student() {};
 	
 	public Student(int studentNum, int kor, int eng, int math) {
 		this.studentNum = studentNum;
-		this.subject = new Subject(kor, eng, math); //가장 중요한 포인트지점
+		this.subject = new Subject(kor, eng, math); //가장 중요한 포인트지점  /student를 subject의( kor eng math )를 사용할 수 있게끔 도와준다.
 	}
 
 	public Student(int studentNum, Subject subject) {
